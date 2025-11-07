@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KMB</title>
+    <link rel="icon" href="image/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Use Tailwind CSS via CDN -->
+    <script src="scriptBeta.js" defer></script>
+  </head>
+  <body class="relative min-h-screen">
+    <!-- Overlay for background opacity -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    <div class="flex flex-col items-center pt-10 gap-10 relative z-10">
+      <div class="w-40"><img src="image/logo.png" alt="KMB"></div>
+      <div class="m-0 border-3 p-3 text-gray-200 rounded-md">
+        <input placeholder="輸入路線號碼" class="p-2 text-neutral-950"></input>
+        <button class="text-large font-bold rounded-md text-white bg-rose-500 p-2 hover:bg-rose-600 hover:scale-105 hover:ease-linear">搜尋路線</button>
+      </div>
+      <div class="flex items-center">
+        <div id="routeN" class="font-bold">請選擇路線：</div>
+        <div id="route" class="font-bold flex flex-wrap gap-2"></div>
+      </div>
+      <div id="stopList" class="flex flex-col items-start w-full max-w-md"></div>
+    </div>
+
+    <div id="eta" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border-8 border-lime-500 rounded-lg shadow-lg p-8 z-50 hidden max-w-sm w-full min-h-80 flex flex-col items-center justify-center"></div>
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9266de25ec1d677d',t:'MTc0Mjk5NDQxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+  </body>
+</html>

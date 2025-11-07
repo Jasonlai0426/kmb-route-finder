@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KMB</title>
+    <link rel="icon" href="image/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js" defer></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <div class="flex flex-col items-center pt-10 gap-10">
+    <div class="w-40 "><img src="image/logo.png" alt="KMB"></div>
+    <div class="m-0 border-3 p-3 text-gray-200 rounded-md">
+    <input placeholder="輸入路線號碼" class="p-2 text-neutral-950"></input>
+      <button class="text-large font-bold rounded-md text-white bg-rose-500 p-2 hover:bg-rose-600 hover:scale-105 hover:ease-linear">搜尋路線</button>
+    </div>
+    <div class="flex items-center">
+    <div id="routeN"class="font-bold">請選擇路線：</div>
+    <div id="route" class=" font-bold flex flex-wrap gap-2"></div>
+  </div>
+    <div id="stopList" class="flex flex-col items-start max-w-md"></div>
+  </div>
+  <div>
+    <div id="eta" class="flex flex-col items-start w-full p-4 text-gray-800"></div>
+  </div>
+  </body>
+</html>
